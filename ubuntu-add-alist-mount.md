@@ -82,3 +82,9 @@ sudo systemctl stop rclone
 ```sh
 sudo systemctl restart rclone
 ```
+## 其他注意事项
+如果rclone意外退出，挂载盘未正常卸载，可使用
+```sh
+sudo fusermount -uz 要解除挂载的路径
+```
+强制解除挂载
